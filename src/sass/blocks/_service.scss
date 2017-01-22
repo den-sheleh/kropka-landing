@@ -27,6 +27,11 @@
   &__content {
     padding: 40px 20px;
   }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.8;
+  }
 }
 
 @include mq(tablet) {
