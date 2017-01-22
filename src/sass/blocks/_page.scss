@@ -1,52 +1,52 @@
 .page {
-	&__header {
-		min-height: 100vh;
-		display: flex;
-  		align-items: center;
-  		justify-content: center;
-		margin-bottom: 100px;
-		background-color: #ccc;
-		background-image: url(../img/bg.jpg);
-		background-position: 50% 50%;
-		background-size: cover;
-	}
+  &__header {
+    min-height: 100vh;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    margin-bottom: 100px;
+    background-color: #ccc;
+    background-image: url(../img/bg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+  }
 
-	&__title {
-		margin: 50px 0;
-		text-align: center;
-		font-size: 62px;
-		line-height: 72px;
-		font-weight: 600;
-		color: $c-attend;
-	}
+  &__title {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 600;
+    color: $c-attend;
+  }
 
-	&__subtitle {
-		margin: 7px 0;
-		text-align: center;
-		font-size: 24px;
-		line-height: 32px;
-		font-weight: 600;
-		color: $c-attend;
-		text-decoration: none;
-	}
+  &__subtitle {
+    margin: 7px 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: $c-attend;
+    text-decoration: none;
+  }
 }
 
 @include mq(tablet) {
-	.page {
-		&__header {
-			margin-bottom: 55px;
-		}
-		&__title {
-			font-size: 60px;
-		}
-	}
+  .page {
+    &__header {
+      margin-bottom: 55px;
+    }
+    &__title {
+      font-size: 60px;
+    }
+  }
 }
 
 @include mq(tablet) {
-	.page {
-		&__title {
-			font-size: 45px;
-			line-height: 1.3;
-		}
-	}
+  .page {
+    &__title {
+      font-size: 45px;
+      line-height: 1.3;
+    }
+  }
 }
