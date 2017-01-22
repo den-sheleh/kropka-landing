@@ -21,3 +21,8 @@ var setUpModalGallery = (function() {
 
   return setUpModalGallery;
 }());
+
+$(window).bind("load resize", function() {
+  var height = $('.gallery__img-wrap').width();
+  $('.gallery__img-wrap').height(height);
+});
