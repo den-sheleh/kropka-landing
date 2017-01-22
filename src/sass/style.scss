@@ -1,0 +1,34 @@
+// =============================================================================
+//  vendor 
+// =============================================================================
+
+@import "vendor/normalize";
+@import "vendor/jquery.fancybox";
+
+
+// =============================================================================
+//  global 
+// =============================================================================
+
+@import "global/var";
+@import "global/mixins";
+@import "global/typograthy";
+@import "global/layout";
+@import "global/svg-sprite";
+
+// =============================================================================
+//  blocks
+// =============================================================================
+
+@import "blocks/page";
+@import "blocks/about";
+@import "blocks/service";
+@import "blocks/details";
+@import "blocks/promo";
+@import "blocks/process";
+@import "blocks/contacts";
+@import "blocks/schedule";
+@import "blocks/address";
+@import "blocks/social";
+@import "blocks/gallery";
+@import "blocks/logo";

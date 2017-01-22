@@ -1,0 +1,61 @@
+.process {
+  margin-bottom: 80px;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  &__item {
+    max-width: 30%;
+    flex-basis: 30%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+    border-radius: 50%;
+    background-color: #e2e2e2;
+  }
+
+  &__svg {
+    @include centerer();
+    height: 50px;
+  }
+}
+
+@include mq(tablet) {
+  .process {
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+
+    &__item {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
+}
+
+@include mq(mobile) {
+  .process {
+    margin-bottom: 50px;
+  }
+}

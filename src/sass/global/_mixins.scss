@@ -1,0 +1,101 @@
+// =============================================================================
+//  Hide text
+// =============================================================================
+
+@mixin hide-text {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+// =============================================================================
+//  Sets for tag <img>
+// =============================================================================
+
+@mixin img-sets {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  vertical-align: bottom;
+}
+
+// =============================================================================
+//  smooth transition
+// =============================================================================
+
+@mixin transition {
+  transition: all 0.2s ease;
+}
+
+// =============================================================================
+//  Block centering
+// =============================================================================
+
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+// =============================================================================
+//  Input's placeholder styles
+// =============================================================================
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content};
+  &:-moz-placeholder           {@content};
+  &::-moz-placeholder          {@content};
+  &:-ms-input-placeholder      {@content};
+  &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.5s ease;};
+  &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.5s ease;};
+  &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.5s ease;};
+  &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.5s ease;};
+}
+
+// =============================================================================
+//  Clearfix
+// =============================================================================
+
+@mixin clearfix {
+  &::before {
+    content: " ";
+    display: table;
+  }
+  &::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+// =============================================================================
+//  Media
+// =============================================================================
+
+ @mixin mq($media) {
+   @if $media == mobile {
+     @media only screen and (max-width: $tablet - 1) {
+       @content;
+     }
+   }
+   @else if $media == tablet {
+     @media only screen and (max-width: $desktop - 1) {
+       @content;
+     }
+   }
+   @else if $media == desktop {
+     @media only screen and (min-width: $desktop) {
+       @content;
+     }
+   }
+ }

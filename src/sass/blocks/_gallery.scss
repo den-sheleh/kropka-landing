@@ -1,0 +1,40 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  &__item {
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    max-height: 450px;
+    @include transition;
+
+    &:hover {
+      position: relative;
+      z-index: 1;
+      transform: scale(1.03);
+      box-shadow: 2px 2px 9px 1px #000;
+    }
+  }
+  &__img-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      @include img-sets;
+    }
+  }
+}
+
+@include mq(tablet) {
+  .gallery {
+    &__item {
+      max-width: 50%;
+      flex-basis: 50%;
+      max-height: 350px;
+    }
+  }
+}

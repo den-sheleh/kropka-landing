@@ -1,0 +1,15 @@
+.about {
+
+  &__wrap {
+    background-color: $bg-grey;
+    padding-bottom: 100px;
+  }
+}
+
+@include mq(tablet) {
+  .about {
+    &__wrap {
+      padding-bottom: 30px;
+    }
+  }
+}

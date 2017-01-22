@@ -1,0 +1,4 @@
+.DS_Store
+build
+.nvmrc
+node_modules/

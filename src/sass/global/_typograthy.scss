@@ -1,0 +1,25 @@
+// @mixin header($color) {
+//   font-family: $ff-verdana;
+//   font-size: $fz-l;
+//   line-height: 30px;
+//   font-weight: 700;
+//   color: $color;
+//
+//   @include mq(tablet) {
+//     font-size: $fz-xl;
+//     line-height: 50px;
+//   }
+//
+//   @include mq(desktop) {
+//     font-size: $fz-xxl;
+//     line-height: 57px;
+//   }
+// }
+
+@mixin text-big {
+  font-size: 24px;
+  line-height: 1.6;
+  color: #000;
+}
+
+
