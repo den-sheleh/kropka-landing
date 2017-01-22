@@ -52,18 +52,27 @@
 @include mq(tablet) {
   .page {
     &__header {
-      margin-bottom: 55px;
+      margin-bottom: 48px;
     }
     &__title {
-      font-size: 60px;
+      font-size: 50px;
+    }
+    &__subtitle {
+      font-size: 30px;
+      line-height: 1.3;
     }
   }
 }
 
-@include mq(tablet) {
+@include mq(mobile) {
   .page {
     &__title {
-      font-size: 45px;
+      font-size: 30px;
+      line-height: 1.3;
+    }
+
+    &__subtitle {
+      font-size: 22px;
       line-height: 1.3;
     }
   }
