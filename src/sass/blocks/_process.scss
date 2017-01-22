@@ -2,10 +2,6 @@
   margin-bottom: 80px;
 
   &__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start;
     text-align: center;
     list-style-type: none;
     margin: 0;
@@ -14,10 +10,8 @@
   }
 
   &__item {
-    max-width: 30%;
-    flex-basis: 30%;
     margin: 0;
-    padding: 0;
+    padding: 0 2.5%;
   }
 
   &__icon {
@@ -40,16 +34,6 @@
 
     &__title {
       margin-bottom: 20px;
-    }
-
-    &__list {
-      flex-direction: column;
-    }
-
-
-    &__item {
-      max-width: 100%;
-      flex-basis: 100%;
     }
   }
 }

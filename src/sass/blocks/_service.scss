@@ -1,13 +1,8 @@
 .service {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: flex-start;
-  text-align: center;
+  width: 90%;
+  margin: 0 auto;
 
   &__block {
-    max-width: 47%;
-    flex-basis: 47%;
     text-decoration: none;
     background-color: #fff;
   }
@@ -36,10 +31,7 @@
 
 @include mq(tablet) {
   .service {
-    flex-direction: column;
     &__block {
-      max-width: 70%;
-      flex-basis: 70%;
       padding: 30px;
       margin: 30px auto 0 auto;
     }
@@ -49,10 +41,8 @@
 
 @include mq(mobile) {
   .service {
-    flex-direction: column;
     &__block {
       max-width: 100%;
-      flex-basis: 100%;
       padding: 10px;
     }
     &__content {
