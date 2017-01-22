@@ -2,14 +2,6 @@ var setUpModalGallery = (function() {
 
   var setUpModalGallery = {
     init: function() {
-
-      $(".js-modalgallery").click(function(e) {
-        if (window.innerWidth < 640) {
-          e.stopPropagation();
-          e.preventDefault();
-        }
-      })
-
       $(".js-modalgallery").fancybox({
         padding: 0,
         maxHeight: 500,

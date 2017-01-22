@@ -29,6 +29,24 @@
     color: $c-attend;
     text-decoration: none;
   }
+
+  &__table-container {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__logo-cell {
+    height: 100vh;
+  }
 }
 
 @include mq(tablet) {
