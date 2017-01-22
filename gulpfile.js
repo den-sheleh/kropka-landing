@@ -115,7 +115,8 @@ gulp.task("copy", function() {
 
 gulp.task("copyHTML", function() {
  return gulp.src([
-   "src/*.html"
+   "src/*.html",
+   "src/favicon.ico"
  ], {
    base: "src/"
  })
